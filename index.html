@@ -1,27 +1,10 @@
-[15.10, 9/9/2026] Rezki Amaliyah AR: <!DOCTYPE html>
-<html>
-<head>
-  <style>
-    /* Mengatur agar konten buatan script Coze muncul di tengah layar */
-    body, html { margin: 0; padding: 0; width: 100%; height: 100vh; overflow: hidden; display: flex; justify-content: center; align-items: center; }
-    iframe, div[class*="coze"] { width: 100% !important; height: 100% !important; max-height: 100vh !important; position: relative !important; bottom: auto !important; right: auto !important; }
-  </style>
-</head>
-<body>
-
-  <!-- !!! TEMPELKAN KODE SCRIPT DARI COZE ANDA DI SINI !!! -->
-
-
-</body>
-</html>
-[15.47, 9/9/2026] Rezki Amaliyah AR: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeoSmart AI Assistant</title>
     <style>
-        /* Memaksa halaman dan layout chat memenuhi layar penuh */
         html, body {
             margin: 0;
             padding: 0;
@@ -38,22 +21,20 @@
 </head>
 <body>
 
-    <!-- Wadah tempat chatbot akan muncul -->
     <div id="chat-container"></div>
 
-    <!-- Script SDK Resmi Coze -->
     <script src="https://coze.com"></script>
     <script>
         new CozeWebSDK.WebChat({
             config: {
-                bot_id: '7683338426799783989', // ⚠️ GANTI INI dengan ID Bot Coze asli Anda!
+                bot_id: '74125683338426799783989',
             },
             componentProps: {
                 title: 'GeoSmart AI Assistant',
             },
-            el: document.getElementById('chat-container'), // Memasang chat ke wadah di atas
+            el: document.getElementById('chat-container'),
             ui: {
-                asComponent: true // Mengubah chat dari tombol melayang menjadi satu halaman penuh
+                asComponent: true
             }
         });
     </script>
